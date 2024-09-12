@@ -1,0 +1,45 @@
+body {
+    font-family: Comic Sans MS, cursive;
+    padding: 20px;
+    padding-bottom: 20px; /* Base padding for the body */
+    background-image: url('/static/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+#results {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1em; /* Slightly smaller font size */
+    line-height: 1.4; /* Adjusted line height for consistency */
+    box-shadow: none;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

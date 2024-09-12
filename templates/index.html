@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indoor Navigation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Indoor Mobility System</h1>
+    <form id="navigation-form">
+        <label for="current-location">Current Location:</label>
+        <select id="current-location">
+            <option value="Entrance">Entrance</option>
+            <option value="Faculty and Staff Restroom">Faculty and Staff Restroom</option>
+            <option value="CA Department">CA Department</option>
+            <option value="IT Department">IT Department</option>
+            <option value="IS Department">IS Department</option>
+            <option value="CS Department">CS Department</option>
+            <option value="Multi Tech Support">Multi Tech Support</option>
+            <option value="Faculty Lounge">Faculty Lounge</option>
+            <option value="Dean's Office">Dean's Office</option>
+            <option value="Women's Restroom">Women's Restroom</option>
+            <option value="Exit">Exit</option>
+            <option value="Room">Room</option>
+            <option value="Database Laboratory">Database Laboratory</option>
+            <option value="CCS Guidance">CCS Guidance</option>
+            <option value="Maintenance Sec">Maintenance Sec</option>
+            <option value="Dev Sec">Dev Sec</option>
+            <option value="ICTC">ICTC</option>
+            <option value="Network Laboratory">Network Laboratory</option>
+            <option value="IOT Laboratory">IOT Laboratory</option>
+            <option value="Multimedia Laboratory">Multimedia Laboratory</option>
+            <option value="CS Laboratory">CS Laboratory</option>
+            <option value="Men's Restroom">Men's Restroom</option>
+            <option value="Women's Restroom(3rd floor)">Women's Restroom(3rd floor)</option>
+            <option value="ICT3A">ICT3A</option>
+            <option value="ICT3B">ICT3B</option>
+            <option value="ICT3C">ICT3C</option>
+            <option value="ICT3D">ICT3D</option>
+            <option value="ICT3E">ICT3E</option>
+            <option value="ICT3F">ICT3F</option>
+            <option value="Men's Faculty Restroom">Men's Faculty Restroom</option>
+            <option value="4th Floor">4th Floor</option>
+        </select>
+
+        <label for="destination">Destination:</label>
+        <select id="destination">
+            <option value="Entrance">Entrance</option>
+            <option value="Faculty and Staff Restroom">Faculty and Staff Restroom</option>
+            <option value="CA Department">CA Department</option>
+            <option value="IT Department">IT Department</option>
+            <option value="IS Department">IS Department</option>
+            <option value="CS Department">CS Department</option>
+            <option value="Multi Tech Support">Multi Tech Support</option>
+            <option value="Faculty Lounge">Faculty Lounge</option>
+            <option value="Dean's Office">Dean's Office</option>
+            <option value="Women's Restroom">Women's Restroom</option>
+            <option value="Exit">Exit</option>
+            <option value="Room">Room</option>
+            <option value="Database Laboratory">Database Laboratory</option>
+            <option value="CCS Guidance">CCS Guidance</option>
+            <option value="Maintenance Sec">Maintenance Sec</option>
+            <option value="Dev Sec">Dev Sec</option>
+            <option value="ICTC">ICTC</option>
+            <option value="Network Laboratory">Network Laboratory</option>
+            <option value="IOT Laboratory">IOT Laboratory</option>
+            <option value="Multimedia Laboratory">Multimedia Laboratory</option>
+            <option value="CS Laboratory">CS Laboratory</option>
+            <option value="Men's Restroom">Men's Restroom</option>
+            <option value="Women's Restroom(3rd floor)">Women's Restroom(3rd floor)</option>
+            <option value="ICT3A">ICT3A</option>
+            <option value="ICT3B">ICT3B</option>
+            <option value="ICT3C">ICT3C</option>
+            <option value="ICT3D">ICT3D</option>
+            <option value="ICT3E">ICT3E</option>
+            <option value="ICT3F">ICT3F</option>
+            <option value="Men's Faculty Restroom">Men's Faculty Restroom</option>
+            <option value="4th Floor">4th Floor</option>
+        </select>
+
+        <button type="button" onclick="calculatePath()">Find Path</button>
+    </form>
+
+    <!-- Display estimated distance and time -->
+    <div id="results">
+        <span id="distance"></span>
+        <span id="time"></span>
+    </div>
+
+    <!-- Hidden image used for drawing on the canvas -->
+    <img id="floor-plan-image" src="{{ url_for('static', filename='FLOORPLANS.png') }}" alt="Floor Plan" style="display: none;">
+
+    <!-- Canvas for drawing paths -->
+    <canvas id="floor-plan"></canvas>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
