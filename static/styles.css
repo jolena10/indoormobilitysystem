@@ -1,5 +1,5 @@
 body {
-    font-family: Inter, bold;
+    font-family: Roboto, bold;
     padding: 20px;
     padding-bottom: 20px; /* Base padding for the body */
     background-image: url('/static/background.png');
