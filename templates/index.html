@@ -17,7 +17,7 @@
             <option value="IT Department">IT Department</option>
             <option value="IS Department">IS Department</option>
             <option value="CS Department">CS Department</option>
-            <option value="Multi Tech Support">Multi Tech Support</option>
+            <option value="Student Lounge">Student Lounge</option>
             <option value="Faculty Lounge">Faculty Lounge</option>
             <option value="Dean's Office">Dean's Office</option>
             <option value="Women's Restroom">Women's Restroom</option>
@@ -38,8 +38,11 @@
             <option value="ICT3B">ICT3B</option>
             <option value="ICT3C">ICT3C</option>
             <option value="ICT3D">ICT3D</option>
-            <option value="ICT3E">ICT3E</option>
-            <option value="ICT3F">ICT3F</option>
+            <option value="Tool Room">Tool Room</option>
+            <option value="Storage Room">Storage Room</option>
+            <option value="Research Laboratory">Research Laboratory</option>
+            <option value="Embedded Laboratory">Embedded Laboratory</option>
+            <option value="ICT3H">ICT3H</option>
             <option value="Men's Faculty Restroom">Men's Faculty Restroom</option>
             <option value="4th Floor">4th Floor</option>
         </select>
@@ -52,7 +55,7 @@
             <option value="IT Department">IT Department</option>
             <option value="IS Department">IS Department</option>
             <option value="CS Department">CS Department</option>
-            <option value="Multi Tech Support">Multi Tech Support</option>
+            <option value="Student Lounge">Student Lounge</option>
             <option value="Faculty Lounge">Faculty Lounge</option>
             <option value="Dean's Office">Dean's Office</option>
             <option value="Women's Restroom">Women's Restroom</option>
@@ -73,8 +76,11 @@
             <option value="ICT3B">ICT3B</option>
             <option value="ICT3C">ICT3C</option>
             <option value="ICT3D">ICT3D</option>
-            <option value="ICT3E">ICT3E</option>
-            <option value="ICT3F">ICT3F</option>
+            <option value="Tool Room">Tool Room</option>
+            <option value="Storage Room">Storage Room</option>
+            <option value="Research Laboratory">Research Laboratory</option>
+            <option value="Embedded Laboratory">Embedded Laboratory</option>
+            <option value="ICT3H">ICT3H</option>
             <option value="Men's Faculty Restroom">Men's Faculty Restroom</option>
             <option value="4th Floor">4th Floor</option>
         </select>
@@ -89,7 +95,7 @@
     </div>
 
     <!-- Hidden image used for drawing on the canvas -->
-    <img id="floor-plan-image" src="{{ url_for('static', filename='FLOORPLAN.png') }}" alt="Floor Plan" style="display: none;">
+    <img id="floor-plan-image" src="{{ url_for('static', filename='FLOORPLANS.png') }}" alt="Floor Plan" style="display: none;">
 
     <!-- Canvas for drawing paths -->
     <canvas id="floor-plan"></canvas>
@@ -97,3 +103,4 @@
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
+
